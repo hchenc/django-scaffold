@@ -1,0 +1,11 @@
+.venv*
+*.swp
+*.e4p
+*.pyc
+__pycache__
+*.sqlite3
+local_settings.py
+deploy/Dockerfile
+*.bak
+.idea
+.vscode
