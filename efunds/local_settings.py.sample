@@ -10,4 +10,11 @@ DATABASES = {
 }
 
 ALLOWED_HOSTS = ['*']
+
 TIME_ZONE = 'Asia/Shanghai'
+
+DEBUG = False
+
+APPEND_SLASH = False
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
