@@ -18,3 +18,9 @@ DEBUG = False
 APPEND_SLASH = False
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+ROOT_URLCONF = 'efunds.path'
+
+STATIC_URL = '/asd/static/'
+
+
