@@ -2,6 +2,8 @@ import os
 
 from efunds.settings import BASE_DIR
 
+APP_NAME = 'asd'
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -21,6 +23,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 ROOT_URLCONF = 'efunds.path'
 
-STATIC_URL = '/asd/static/'
 
 

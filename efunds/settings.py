@@ -101,8 +101,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
-
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -161,5 +159,9 @@ LOGGING = {
         },
     }
 }
+
+APP_NAME = os.getenv('APP_NAME', '')
+
+STATIC_URL = '/{}/static/'.format(APP_NAME) if APP_NAME else '/static/'
 
 from .local_settings import *
